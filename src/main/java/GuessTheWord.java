@@ -11,16 +11,21 @@ import java.util.Scanner;
 
 class GuessTheWord {
   public static void main(String[] args) {
+    // Sets up the scanner
     Scanner console = new Scanner(System.in);
 
+    // sets correct word
     String correct = getRandomWord();
+    System.out.println(correct);
     String userGuess;
     
+    // Takes the user's guess
     System.out.print("Guess the word I'm thinking of: ");
     userGuess = console.next();
-    console.nextLine();  // why???!
+    console.nextLine();  // get rid of new line
 
-    while (userGuess != correct) {
+    // Prompts repetedly until guess is correct
+    while (!userGuess.equals(correct)) {
 
         // reprompt and retry
       System.out.print("Sorry. That's not right. Guess again: ");
@@ -45,7 +50,7 @@ class GuessTheWord {
         "the", "quick", "red", "fox", "jumped", "over", "lazy", "brown", "dog"
     };
 
-    int random = 0;
+    int random = (int) (Math.random() * words.length);
 
     return words[random];
   }

@@ -4,16 +4,16 @@
 Without running the program, **predict** two things.
 
 1. What is the program **supposed.** to do?
-    > your answer
+    > The program is supposed to pick a random word and prompt the user to guess a word, asking again if incorrect and saying that it was correct if the correct word is given
 
 2. What does the program **actually** do?
-    > your answer
+    > It only provides "the" as the word.
 
 ## Run
 Now run the program. 
 
 3. What did the program actually do?
-    > your answer
+    > None of the answers actually worked.
 
 ## Investigate
 1. Go through the code and **annotate** with single line comments what the major blocks of code do.
